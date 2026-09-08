@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mohamed Mahmoud Ibrahim | SOC Analyst (L1) &amp; IT Support Specialist</title>
+  <meta content="Mohamed Mahmoud Ibrahim - SOC Analyst (L1) and Network &amp; IT Support Specialist. Security monitoring, SIEM log analysis, alert triage, incident response, network infrastructure, and enterprise support." name="description">
+  <meta content="SOC Analyst, L1, Cybersecurity, SIEM, Splunk, QRadar, FortiSIEM, Network Engineer, IT Support, Cisco, CCST, CCNA, Minya Egypt" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700;800&family=Fira+Code:wght@400;600&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <!-- ====== NETWORK CANVAS BACKGROUND ====== -->
+  <canvas id="network-canvas"></canvas>
+
+  <!-- ====== CUSTOM CURSOR ====== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ====== TOP HEADER / NAVBAR ====== -->
+  <header class="top-header">
+    <div class="header-inner">
+
+      <!-- Brand -->
+      <a href="index.html" class="header-brand">
+        <img src="assets/img/profile.jpg" alt="Mohamed Mahmoud Ibrahim" class="header-avatar">
+        <span class="header-name">Mohamed Mahmoud Ibrahim</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="header-nav">
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> <span data-i18n="nav_home">Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav_about">About</span></a></li>
+        <li><a href="#tools"><i class="bi bi-tools navicon"></i> <span data-i18n="nav_tools">Tools</span></a></li>
+        <li><a href="#skills"><i class="bi bi-bar-chart navicon"></i> <span data-i18n="nav_skills">Skills</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav_resume">Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav_projects">Projects</span></a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> <span data-i18n="nav_services">Services</span></a></li>
+        <li><a href="#certificates"><i class="bi bi-patch-check navicon"></i> <span data-i18n="nav_certificates">Certificates</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav_contact">Contact</span></a></li>
+      </ul>
+
+      <!-- Right group: toggles -->
+      <div class="header-right">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <i class="bi bi-sun-fill theme-icon-light"></i>
+          <i class="bi bi-moon-fill theme-icon-dark"></i>
+        </button>
+
+        <!-- Language Toggle -->
+        <button id="lang-toggle" class="lang-toggle-btn" aria-label="Toggle language">
+          <i class="bi bi-translate"></i>
+          <span id="lang-label">EN</span>
+        </button>
+
+        <!-- Hamburger (mobile) -->
+        <button class="header-hamburger" aria-label="Open menu"><i class="bi bi-list"></i></button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ====== MOBILE NAV PANEL ====== -->
+  <div class="mobile-nav-panel">
+    <button class="mobile-nav-close" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+    <a href="#hero" class="active"><i class="bi bi-house navicon"></i> <span data-i18n="nav_home">Home</span></a>
+    <a href="#about"><i class="bi bi-person navicon"></i> <span data-i18n="nav_about">About</span></a>
+    <a href="#tools"><i class="bi bi-tools navicon"></i> <span data-i18n="nav_tools">Tools</span></a>
+    <a href="#skills"><i class="bi bi-bar-chart navicon"></i> <span data-i18n="nav_skills">Skills</span></a>
+    <a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> <span data-i18n="nav_resume">Resume</span></a>
+    <a href="#portfolio"><i class="bi bi-images navicon"></i> <span data-i18n="nav_projects">Projects</span></a>
+    <a href="#services"><i class="bi bi-hdd-stack navicon"></i> <span data-i18n="nav_services">Services</span></a>
+    <a href="#certificates"><i class="bi bi-patch-check navicon"></i> <span data-i18n="nav_certificates">Certificates</span></a>
+    <a href="#contact"><i class="bi bi-envelope navicon"></i> <span data-i18n="nav_contact">Contact</span></a>
+  </div>
+
+  <!-- ====== MAIN CONTENT ====== -->
+  <main class="main">
+
+    <!-- ====== HERO SECTION ====== -->
+    <section id="hero" class="hero section animated-hero">
+      <div class="animated-bg">
+        <canvas id="network-canvas" class="network-canvas"></canvas>
+        <div class="hero-cyber-grid"></div>
+        <div class="hero-glow-orb hero-glow-1"></div>
+        <div class="hero-glow-orb hero-glow-2"></div>
+      </div>
+
+      <div class="container hero-content hero-two-col" data-aos="fade-up" data-aos-delay="100">
+        <!-- Left Column: Text -->
+        <div class="hero-text-col">
+          <div class="hero-status-badge">
+            <span class="status-dot"></span>
+            <span data-i18n="hero_status">Open to Opportunities</span>
+          </div>
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 class="hero-title">Mohamed Mahmoud <span class="hero-name-accent">Ibrahim</span></h1>
+          <div class="hero-role-box">
+            <span class="role-terminal-tag">&gt;</span>
+            <span class="typed" data-typed-items="SOC Analyst (L1), Network &amp; IT Support Specialist, Cybersecurity Trainee">SOC Analyst (L1)</span>
+          </div>
+          <p class="hero-desc" data-i18n="hero_desc">Entry-level SOC Analyst and IT Support Specialist with CCNA &amp; CCST certifications and hands-on experience in networking, cybersecurity, and infrastructure support.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-hero btn-contact"><i class="bi bi-send me-2"></i><span data-i18n="hero_contact_me">Get in Touch</span></a>
+            <a href="#portfolio" class="btn-hero btn-outline"><i class="bi bi-collection me-2"></i><span data-i18n="hero_view_projects">View Projects</span></a>
+          </div>
+          <!-- Hero Social Links -->
+          <div class="hero-social-links">
+            <a href="https://www.linkedin.com/in/mohamed-mahmoud-248b35285/" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/201068487084" target="_blank" rel="noopener" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.credly.com/users/mohamed-mahmoud-ibrahim" target="_blank" rel="noopener" title="Credly"><i class="bi bi-award"></i></a>
+            <a href="mailto:mah902110@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+        <!-- Right Column: Profile Image with Floating Badges -->
+        <div class="hero-img-col">
+          <div class="hero-profile-wrapper">
+            <div class="hero-profile-ring">
+              <img src="assets/img/profile.jpg" alt="Mohamed Mahmoud Ibrahim" class="hero-profile-img">
+            </div>
+            <!-- Floating Badges (balanced 4-quadrant orbit) -->
+            <div class="hero-badge hero-badge-1" data-aos="fade-left" data-aos-delay="400">
+              <i class="bi bi-shield-check"></i>
+              <span>CCST</span>
+            </div>
+            <div class="hero-badge hero-badge-4" data-aos="fade-right" data-aos-delay="500">
+              <i class="bi bi-router"></i>
+              <span>CCNA</span>
+            </div>
+            <div class="hero-badge hero-badge-2" data-aos="fade-right" data-aos-delay="600">
+              <i class="bi bi-code-slash"></i>
+              <span>NTI</span>
+            </div>
+            <div class="hero-badge hero-badge-3" data-aos="fade-left" data-aos-delay="700">
+              <i class="bi bi-hdd-network"></i>
+              <span>Network</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT SECTION ====== -->
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="section_about">About</h2>
+        <p data-i18n="about_desc">Entry-level SOC Analyst (L1) and IT Support Specialist with 420+ hours of hands-on training in security monitoring, log analysis, alert triage, and incident response across 15+ practical labs, alongside a solid foundation in network administration and enterprise infrastructure. Trained on SIEM platforms (Splunk, IBM QRadar, FortiSIEM, Security Onion) and SOAR playbooks (FortiSOAR) to detect, investigate, and escalate security events, and skilled in threat and vulnerability assessment, network traffic analysis (Wireshark), and firewall/IDS-IPS monitoring (FortiGate). Combines this security foundation with practical experience supporting Windows, Active Directory, and Cisco network environments to deliver reliable first-line detection, troubleshooting, and support.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center align-items-center">
+          <div class="col-lg-4">
+            <div class="profile-img-wrap">
+              <img src="assets/img/profile.jpg" class="img-fluid" alt="Mohamed Mahmoud Ibrahim">
+            </div>
+          </div>
+          <div class="col-lg-8 content">
+            <h2 data-i18n="about_title">SOC Analyst (L1) | Network &amp; IT Support Specialist</h2>
+            <p class="fst-italic py-3" data-i18n="about_subtitle">Proactive security and infrastructure professional with extensive lab experience across SIEM monitoring, threat detection, and Cisco network environments.</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_phone">Phone:</strong> <span>+20 01068487084</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_city">City:</strong> <span data-i18n="about_city_val">Minya, Egypt</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_email">Email:</strong> <span>mah902110@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_degree">Degree:</strong> <span data-i18n="about_degree_val">Bachelor of Technology (IT – Network Specialization)</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_university">University:</strong> <span data-i18n="about_university_val">Fayoum International Technology University (FITU)</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_gpa">GPA:</strong> <span>3.8 / 4.0</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_certifications">Certifications:</strong> <span data-i18n="about_certifications_val">Cisco Certified Support Technician (CCST); CCNA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_freelance">Freelance:</strong> <span data-i18n="about_freelance_val">Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3" data-i18n="about_extra">Equipped with strong analytical and incident triage capabilities. Experienced in analyzing PCAP network traffic with Wireshark, configuring FortiGate firewalls &amp; IDS/IPS, implementing Cisco routing/switching, managing Windows Server &amp; Active Directory, and building automated security scripts in Python.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== STATS SECTION ====== -->
+    <section id="stats" class="stats section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-clock-history"></i>
+              <span data-purecounter-start="0" data-purecounter-end="700" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong data-i18n="stats_hours">Training Hours</strong> <span data-i18n="stats_hours_sub">SOC &amp; Cybersecurity</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-shield-check"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong data-i18n="stats_labs">Practical Labs</strong> <span data-i18n="stats_labs_sub">SIEM &amp; Pentesting</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-award"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong data-i18n="stats_certs">Certifications &amp; Courses</strong> <span data-i18n="stats_certs_sub">CCST, CCNA, Palo Alto, ITI</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-mortarboard"></i>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong data-i18n="stats_training">Professional Programs</strong> <span data-i18n="stats_training_sub">NTI, DEY, CAPMAS, Alx</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TOOLS & TECHNOLOGIES SECTION ====== -->
+    <section id="tools" class="tools-section section">
+      <div class="tools-bg">
+        <svg class="tools-svg-bg" viewBox="0 0 1440 400" preserveAspectRatio="none">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="0.3" opacity="0.15"/>
+            </pattern>
+            <radialGradient id="glow1" cx="30%" cy="50%" r="40%">
+              <stop offset="0%" stop-color="var(--accent-color)" stop-opacity="0.08"/>
+              <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="glow2" cx="70%" cy="50%" r="35%">
+              <stop offset="0%" stop-color="var(--accent-color)" stop-opacity="0.06"/>
+              <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)"/>
+          <rect width="100%" height="100%" fill="url(#glow1)"/>
+          <rect width="100%" height="100%" fill="url(#glow2)"/>
+          <!-- Network nodes -->
+          <circle cx="200" cy="100" r="4" fill="var(--accent-color)" opacity="0.4"/>
+          <circle cx="400" cy="200" r="3" fill="var(--accent-color)" opacity="0.3"/>
+          <circle cx="700" cy="80" r="5" fill="var(--accent-color)" opacity="0.35"/>
+          <circle cx="1000" cy="180" r="4" fill="var(--accent-color)" opacity="0.3"/>
+          <circle cx="1200" cy="120" r="3" fill="var(--accent-color)" opacity="0.4"/>
+          <circle cx="300" cy="300" r="3" fill="var(--accent-color)" opacity="0.25"/>
+          <circle cx="900" cy="320" r="4" fill="var(--accent-color)" opacity="0.3"/>
+          <!-- Connection lines -->
+          <line x1="200" y1="100" x2="400" y2="200" stroke="var(--accent-color)" stroke-width="0.5" opacity="0.2"/>
+          <line x1="400" y1="200" x2="700" y2="80" stroke="var(--accent-color)" stroke-width="0.5" opacity="0.15"/>
+          <line x1="700" y1="80" x2="1000" y2="180" stroke="var(--accent-color)" stroke-width="0.5" opacity="0.2"/>
+          <line x1="1000" y1="180" x2="1200" y2="120" stroke="var(--accent-color)" stroke-width="0.5" opacity="0.15"/>
+          <line x1="200" y1="100" x2="300" y2="300" stroke="var(--accent-color)" stroke-width="0.5" opacity="0.12"/>
+          <line x1="400" y1="200" x2="900" y2="320" stroke="var(--accent-color)" stroke-width="0.5" opacity="0.1"/>
+          <!-- Shield icon (security) -->
+          <g transform="translate(720, 350) scale(0.5)" opacity="0.08">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5L12 1z" fill="var(--accent-color)" stroke="var(--accent-color)" stroke-width="1"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="section_tools">Tools &amp; Technologies</h2>
+        <p data-i18n="tools_desc">The cybersecurity, SIEM, networking, and systems administration tools I use to monitor, protect, and troubleshoot enterprise environments.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="tool-icon"><i class="bi bi-shield-shaded"></i></div>
+              <span class="tool-name">Splunk SIEM</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="150">
+              <div class="tool-icon"><i class="bi bi-cpu"></i></div>
+              <span class="tool-name">IBM QRadar</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="tool-icon"><i class="bi bi-shield-lock"></i></div>
+              <span class="tool-name">FortiSIEM</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="250">
+              <div class="tool-icon"><i class="bi bi-search"></i></div>
+              <span class="tool-name">Security Onion</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="tool-icon"><i class="bi bi-activity"></i></div>
+              <span class="tool-name">Wireshark</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="350">
+              <div class="tool-icon"><i class="bi bi-shield-check"></i></div>
+              <span class="tool-name">FortiGate Firewall</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="tool-icon"><i class="bi bi-router"></i></div>
+              <span class="tool-name">Cisco IOS</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="450">
+              <div class="tool-icon"><i class="bi bi-hdd-network"></i></div>
+              <span class="tool-name">Packet Tracer</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="500">
+              <div class="tool-icon"><i class="bi bi-server"></i></div>
+              <span class="tool-name">Windows Server</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="550">
+              <div class="tool-icon"><i class="bi bi-terminal"></i></div>
+              <span class="tool-name">Linux / CyberOps</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="600">
+              <div class="tool-icon"><i class="bi bi-code-square"></i></div>
+              <span class="tool-name">Python Automation</span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="tool-card" data-aos="zoom-in" data-aos-delay="650">
+              <div class="tool-icon"><i class="bi bi-pc-display"></i></div>
+              <span class="tool-name">VMware / GNS3</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SKILLS SECTION ====== -->
+    <section id="skills" class="skills section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="section_skills">Skills</h2>
+        <p data-i18n="skills_desc">Technical competencies across SOC operations, network infrastructure, and programming. Built through 420+ hours of intensive hands-on lab training.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        
+        <!-- Group 1: SOC / Security Operations -->
+        <div class="mb-4">
+          <h4 class="mb-3 text-accent" style="color: var(--accent-color); font-weight: 600;" data-i18n="skills_cat_soc"><i class="bi bi-shield-check me-2"></i>SOC &amp; Security Operations</h4>
+          <div class="row skills-content skills-animation">
+            <div class="col-lg-6">
+              <div class="progress skill-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-header">
+                  <i class="bi bi-shield-shaded skill-icon"></i>
+                  <span class="skill"><span data-i18n="skill_siem">SIEM Monitoring &amp; Log Analysis (Splunk, QRadar, FortiSIEM, Security Onion)</span> <i class="val">90%</i></span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress skill-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="skill-header">
+                  <i class="bi bi-exclamation-triangle skill-icon"></i>
+                  <span class="skill"><span data-i18n="skill_ir">Incident Response &amp; Alert Triage</span> <i class="val">90%</i></span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress skill-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-header">
+                  <i class="bi bi-activity skill-icon"></i>
+                  <span class="skill"><span data-i18n="skill_traffic">Network Traffic Analysis (Wireshark)</span> <i class="val">90%</i></span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="progress skill-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="skill-header">
+                  <i class="bi bi-lock skill-icon"></i>
+                  <span class="skill"><span data-i18n="skill_firewall">Firewall / IDS-IPS Monitoring (FortiGate)</span> <i class="val">90%</i></span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress skill-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-header">
+                  <i class="bi bi-bug skill-icon"></i>
+                  <span class="skill"><span data-i18n="skill_vuln">Vulnerability Assessment &amp; Pen-Testing Fundamentals</span> <i class="val">90%</i></span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 2: Network & IT Infrastructure -->
+        <div class="mb-4 mt-5">
+          <h4 class="mb-3 text-accent" style="color: var(--accent-color); font-weight: 600;" data-i18n="skills_cat_network"><i class="bi bi-diagram-3 me-2"></i>Network &amp; IT Infrastructure</h4>
+          <div class="row skills-content skills-animation">
+            <div class="col-lg-6">
+              <div class="progress skill-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-header">
+                  <i class="bi bi-router skill-icon"></i>
+                  <span class="skill"><span data-i18n="skill_routing">Routing &amp; Switching (Cisco)</span> <i class="val">90%</i></span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress skill-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="skill-header">
+                  <i class="bi bi-hdd-network skill-icon"></i>
+                  <span class="skill"><span data-i18n="skill_infrastructure">LAN/WAN Infrastructure Design</span> <i class="val">90%</i></span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="progress skill-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-header">
+                  <i class="bi bi-server skill-icon"></i>
+                  <span class="skill"><span data-i18n="skill_winserver">Windows Server &amp; Active Directory</span> <i class="val">90%</i></span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="progress skill-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="skill-header">
+                  <i class="bi bi-terminal skill-icon"></i>
+                  <span class="skill"><span data-i18n="skill_linux">Linux Administration</span> <i class="val">90%</i></span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 3: Programming & Scripting -->
+        <div class="mb-4 mt-5">
+          <h4 class="mb-3 text-accent" style="color: var(--accent-color); font-weight: 600;" data-i18n="skills_cat_programming"><i class="bi bi-code-slash me-2"></i>Programming &amp; Scripting</h4>
+          <div class="row skills-content skills-animation">
+            <div class="col-lg-6">
+              <div class="progress skill-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-header">
+                  <i class="bi bi-code-square skill-icon"></i>
+                  <span class="skill"><span data-i18n="skill_python">Python</span> <i class="val">90%</i></span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="progress skill-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="skill-header">
+                  <i class="bi bi-cup-hot skill-icon"></i>
+                  <span class="skill"><span data-i18n="skill_c_java">Java / C / C++</span> <i class="val">90%</i></span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====== RESUME SECTION ====== -->
+    <section id="resume" class="resume section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="section_resume">Resume</h2>
+        <p data-i18n="resume_desc">Comprehensive background in Security Operations, Network Engineering, and IT Support. Specialized in SIEM monitoring, threat analysis, and Cisco infrastructure.</p>
+        <a href="Mohamed_Mahmoud_Ibrahim_CV.pdf" class="btn-hero btn-download-cv mt-3" download="Mohamed_Mahmoud_Ibrahim_CV.pdf"><i class="bi bi-download me-2"></i><span data-i18n="resume_download">Download CV</span></a>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title" data-i18n="resume_summary">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Mohamed Mahmoud Ibrahim</h4>
+              <p><em data-i18n="resume_summary_text">Entry-level SOC Analyst (L1) and IT Support Specialist with 420+ hours of hands-on training in security monitoring, log analysis, alert triage, and incident response across 15+ practical labs, alongside a solid foundation in network administration and enterprise infrastructure. Trained on SIEM platforms (Splunk, IBM QRadar, FortiSIEM, Security Onion) and SOAR playbooks (FortiSOAR) to detect, investigate, and escalate security events, and skilled in threat and vulnerability assessment, network traffic analysis (Wireshark), and firewall/IDS-IPS monitoring (FortiGate). Combines this security foundation with practical experience supporting Windows, Active Directory, and Cisco network environments to deliver reliable first-line detection, troubleshooting, and support.</em></p>
+              <ul>
+                <li><span data-i18n="about_city_val">Minya, Egypt</span></li>
+                <li>+20 01068487084</li>
+                <li>mah902110@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title" data-i18n="resume_education">Education</h3>
+            <div class="resume-item">
+              <h4 data-i18n="resume_edu_title">Bachelor of Technology – Network Specialization</h4>
+              <h5 data-i18n="resume_edu_dates">2022 – 2026</h5>
+              <p><em data-i18n="resume_edu_school">Fayoum International Technology University (FITU)</em></p>
+              <p data-i18n="resume_edu_detail">GPA 3.8 / 4.0. Focus: Networking, Cybersecurity fundamentals, Routing &amp; Switching, Network Security.</p>
+            </div>
+
+            <!-- Certifications & Licenses Grid -->
+            <h3 class="resume-title mt-4" data-i18n="resume_certs_title">Certifications &amp; Licenses</h3>
+            <div class="resume-item">
+              <h4 data-i18n="cert_ccst_title">Cisco Certified Support Technician (CCST) Networking</h4>
+              <h5 style="background: rgba(0, 240, 255, 0.15); color: var(--accent-color); border: 1px solid var(--accent-color);">Professional License (May 2026 – 2031)</h5>
+              <p data-i18n="cert_ccst_sub">Professional License • Issued May 2026 • Valid until May 2031</p>
+            </div>
+            <div class="resume-item">
+              <h4 data-i18n="cert_ccna_title">CCNA: Cisco Networking Academy Tracks</h4>
+              <p data-i18n="cert_ccna_sub">Introduction to Networks • Switching, Routing, &amp; Wireless • Enterprise Networking, Security &amp; Automation</p>
+            </div>
+            <div class="resume-item">
+              <h4 data-i18n="cert_paloalto_title">Cybersecurity Foundation</h4>
+              <p data-i18n="cert_paloalto_sub">Palo Alto Networks Cybersecurity Academy • May 2026</p>
+            </div>
+            <div class="resume-item">
+              <h4 data-i18n="cert_ai_sec_title">AI-Driven Security (Sentinel Agent)</h4>
+              <p data-i18n="cert_ai_sec_sub">GDG on Campus Future Academy • May 2026</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title" data-i18n="resume_experience">Experience &amp; Training</h3>
+            
+            <!-- Entry 1 -->
+            <div class="resume-item">
+              <h4 data-i18n="resume_exp1_title">Cybersecurity &amp; SOC Analyst (L1) Trainee</h4>
+              <h5 data-i18n="resume_exp1_dates">July 2026 – December 2026</h5>
+              <p><em data-i18n="resume_exp1_company">National Telecommunication Institute (NTI), Cairo</em></p>
+              <ul>
+                <li data-i18n="resume_exp1_1">Completed 420+ hours of hands-on cybersecurity/SOC training across 15+ practical labs (SIEM monitoring, incident response, penetration testing).</li>
+                <li data-i18n="resume_exp1_2">Monitored alerts and analyzed logs in Splunk, IBM QRadar, FortiSIEM, and Security Onion to detect anomalies and identify IOCs.</li>
+                <li data-i18n="resume_exp1_3">Investigated/escalated incidents using FortiSOAR playbooks and FortiAnalyzer following structured SOC workflows.</li>
+                <li data-i18n="resume_exp1_4">Performed vulnerability scanning, network/port scanning, and penetration testing (recon, web app, wireless).</li>
+                <li data-i18n="resume_exp1_5">Analyzed traffic with Wireshark; monitored FortiGate firewalls, IDS/IPS, IPsec/SSL VPNs, and web filtering.</li>
+                <li data-i18n="resume_exp1_6">Applied Cisco CyberOps and Red Hat Linux administration to secure endpoints; completed a business English/leadership/project-management track with a capstone project.</li>
+              </ul>
+            </div>
+
+            <!-- Entry 2 -->
+            <div class="resume-item">
+              <h4 data-i18n="resume_exp2_title">IT Technical Support Trainee</h4>
+              <h5 data-i18n="resume_exp2_dates">December 2025 – February 2026</h5>
+              <p><em data-i18n="resume_exp2_company">Digital Egypt Youth (DEY) – Creativa Innovation Hubs, Minya</em></p>
+              <ul>
+                <li data-i18n="resume_exp2_1">Provided Tier 1 technical support, triaging hardware/software/network tickets to maintain system uptime.</li>
+                <li data-i18n="resume_exp2_2">Administered Windows &amp; Active Directory (user accounts, permissions, access controls).</li>
+                <li data-i18n="resume_exp2_3">Logged, tracked, and escalated incidents through a structured documentation process.</li>
+                <li data-i18n="resume_exp2_4">Monitored endpoint/network health to proactively flag and resolve issues.</li>
+              </ul>
+            </div>
+
+            <!-- Entry 3 -->
+            <div class="resume-item">
+              <h4 data-i18n="resume_exp3_title">CCNA Trainee</h4>
+              <h5 data-i18n="resume_exp3_dates">October 2025 – November 2025</h5>
+              <p><em data-i18n="resume_exp3_company">CAPMAS HRDC, Cairo</em></p>
+              <ul>
+                <li data-i18n="resume_exp3_1">Completed enterprise network infrastructure training in advanced routing and network security.</li>
+                <li data-i18n="resume_exp3_2">Configured VLANs, NAT, and ACLs for traffic segmentation and access control.</li>
+                <li data-i18n="resume_exp3_3">Deployed OSPF and EIGRP for scalable multi-branch connectivity.</li>
+                <li data-i18n="resume_exp3_4">Simulated and stress-tested complex architectures in Cisco Packet Tracer.</li>
+              </ul>
+            </div>
+
+            <!-- Entry 4 -->
+            <div class="resume-item">
+              <h4 data-i18n="resume_exp4_title">Network Infrastructure Trainee</h4>
+              <h5 data-i18n="resume_exp4_dates">July 2025 – August 2025</h5>
+              <p><em data-i18n="resume_exp4_company">National Telecommunication Institute (NTI), Cairo</em></p>
+              <ul>
+                <li data-i18n="resume_exp4_1">Studied core routing, switching, and IP subnetting design.</li>
+                <li data-i18n="resume_exp4_2">Configured Cisco routers/switches for secure, monitorable connectivity.</li>
+                <li data-i18n="resume_exp4_3">Diagnosed connectivity issues using structured CCNA testing strategies.</li>
+                <li data-i18n="resume_exp4_4">Evaluated LAN/WAN frameworks for security and performance.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PROJECTS SECTION ====== -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="section_projects">Projects</h2>
+        <p data-i18n="projects_desc">Practical engineering and security implementations in Python network automation, SIEM integration, and embedded systems.</p>
+      </div>
+
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active" data-i18n="filter_all">All</li>
+            <li data-filter=".filter-network" data-i18n="filter_network">Networking &amp; Security</li>
+            <li data-filter=".filter-embedded" data-i18n="filter_embedded">Embedded Systems</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Project 1: Graduation Project -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-network">
+              <div class="portfolio-content h-100">
+                <div class="portfolio-img-box">
+                  <img src="assets/img/portfolio/project-network-automation.jpg" alt="Network Automation &amp; Secure Program with Python">
+                </div>
+                <div class="portfolio-body">
+                  <span class="badge-cat" data-i18n="proj1_cat">Networking &amp; Security</span>
+                  <h4 class="project-card-title" data-i18n="proj1_title">Graduation Project — Network Automation &amp; Secure Program with Python</h4>
+                  <p class="project-card-meta" data-i18n="proj1_meta">FITU | 2026 | Python, Cisco, Splunk SIEM</p>
+                  <p class="project-card-desc" data-i18n="proj1_desc">A comprehensive Python-based automation solution (2,000+ lines of code) to automate Cisco network deployment and configuration. Automated Layer 2/3 topologies using Netmiko across multi-branch EVE-NG environments, automated branch firewalls and ACLs for traffic filtering, and integrated a Splunk-based SIEM solution for continuous threat monitoring and anomaly detection.</p>
+                  <div class="project-card-actions">
+                    <a href="assets/img/portfolio/project-network-automation.jpg" title="Graduation Project — Network Automation &amp; Secure Program with Python" data-gallery="portfolio-gallery-network" class="glightbox btn btn-sm btn-outline-info"><i class="bi bi-zoom-in me-1"></i> Preview</a>
+                    <button onclick="openProjectModal(this)" class="btn btn-sm btn-primary" style="background: var(--accent-color); color: #050b14; border: none; font-weight: 600;" data-project-title="Graduation Project — Network Automation &amp; Secure Program with Python" data-project-img="assets/img/portfolio/project-network-automation.jpg" data-project-desc="A comprehensive Python-based automation solution (2,000+ lines of code) to automate Cisco network deployment and configuration. Automated Layer 2/3 topologies using Netmiko across multi-branch EVE-NG environments, automated branch firewalls and ACLs for traffic filtering, and integrated a Splunk-based SIEM solution for continuous threat monitoring and anomaly detection." data-project-features="Automated Layer 2/3 topology deployment via Netmiko,Multi-branch EVE-NG network simulation,Firewall &amp; ACL automation for traffic filtering,Splunk SIEM integration for threat monitoring,2000+ lines of Python automation code,Real-time anomaly detection &amp; alerting"><i class="bi bi-box-arrow-up-right me-1"></i> Case Study</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: Enterprise Network Design -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-network">
+              <div class="portfolio-content h-100">
+                <div class="portfolio-img-box">
+                  <img src="assets/img/portfolio/project-enterprise-network.jpg" alt="Enterprise Multi-Branch Network Design &amp; OSPF/VLANs">
+                </div>
+                <div class="portfolio-body">
+                  <span class="badge-cat" data-i18n="proj3_cat">Networking &amp; Security</span>
+                  <h4 class="project-card-title" data-i18n="proj3_title">Enterprise Multi-Branch Network Design &amp; OSPF/VLANs</h4>
+                  <p class="project-card-meta" data-i18n="proj3_meta">Cisco Architecture | OSPF, VLANs, HSRP, NAT | Packet Tracer &amp; GNS3</p>
+                  <p class="project-card-desc" data-i18n="proj3_desc">Hierarchical Core-Distribution-Access enterprise network architecture designed for high availability and fault tolerance. Implemented multi-area OSPF routing, Inter-VLAN routing with 802.1Q trunking, HSRP first-hop gateway redundancy, and NAT/PAT. Enforced comprehensive network hardening using Port Security, DHCP Snooping, Dynamic ARP Inspection, and ACL security policies.</p>
+                  <div class="project-card-actions">
+                    <a href="assets/img/portfolio/project-enterprise-network.jpg" title="Enterprise Multi-Branch Network Design &amp; OSPF/VLANs" data-gallery="portfolio-gallery-network" class="glightbox btn btn-sm btn-outline-info"><i class="bi bi-zoom-in me-1"></i> Preview</a>
+                    <button onclick="openProjectModal(this)" class="btn btn-sm btn-primary" style="background: var(--accent-color); color: #050b14; border: none; font-weight: 600;" data-project-title="Enterprise Multi-Branch Network Design &amp; OSPF/VLANs" data-project-img="assets/img/portfolio/project-enterprise-network.jpg" data-project-desc="Hierarchical Core-Distribution-Access enterprise network architecture designed for high availability and fault tolerance. Implemented multi-area OSPF routing, Inter-VLAN routing with 802.1Q trunking, HSRP first-hop gateway redundancy, and NAT/PAT. Enforced comprehensive network hardening using Port Security, DHCP Snooping, Dynamic ARP Inspection, and ACL security policies." data-project-features="Multi-area OSPF dynamic routing,Inter-VLAN routing with 802.1Q trunking,HSRP first-hop gateway redundancy,NAT/PAT address translation,Port Security &amp; DHCP Snooping,Dynamic ARP Inspection &amp; ACL policies"><i class="bi bi-box-arrow-up-right me-1"></i> Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: Next-Gen Firewall & SOC Mitigation Lab -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-network">
+              <div class="portfolio-content h-100">
+                <div class="portfolio-img-box">
+                  <img src="assets/img/portfolio/project-firewall-soc.jpg" alt="Next-Gen Firewall &amp; SOC Threat Mitigation Lab">
+                </div>
+                <div class="portfolio-body">
+                  <span class="badge-cat" data-i18n="proj4_cat">Networking &amp; Security</span>
+                  <h4 class="project-card-title" data-i18n="proj4_title">Next-Gen Firewall &amp; SOC Threat Mitigation Lab</h4>
+                  <p class="project-card-meta" data-i18n="proj4_meta">FortiGate NGFW | Splunk SIEM | IPS/IDS &amp; SSL-VPN | NTI SOC Lab</p>
+                  <p class="project-card-desc" data-i18n="proj4_desc">Comprehensive enterprise perimeter security deployment featuring FortiGate Next-Generation Firewall integrated with Splunk SIEM. Configured IPS/IDS threat inspection signatures, SSL-VPN secure remote tunnels, and web/application filtering. Streamed real-time syslog alerts into Splunk and IBM QRadar for incident triage, analyzing brute-force, port scans, and malware activity.</p>
+                  <div class="project-card-actions">
+                    <a href="assets/img/portfolio/project-firewall-soc.jpg" title="Next-Gen Firewall &amp; SOC Threat Mitigation Lab" data-gallery="portfolio-gallery-network" class="glightbox btn btn-sm btn-outline-info"><i class="bi bi-zoom-in me-1"></i> Preview</a>
+                    <button onclick="openProjectModal(this)" class="btn btn-sm btn-primary" style="background: var(--accent-color); color: #050b14; border: none; font-weight: 600;" data-project-title="Next-Gen Firewall &amp; SOC Threat Mitigation Lab" data-project-img="assets/img/portfolio/project-firewall-soc.jpg" data-project-desc="Comprehensive enterprise perimeter security deployment featuring FortiGate Next-Generation Firewall integrated with Splunk SIEM. Configured IPS/IDS threat inspection signatures, SSL-VPN secure remote tunnels, and web/application filtering. Streamed real-time syslog alerts into Splunk and IBM QRadar for incident triage, analyzing brute-force, port scans, and malware activity." data-project-features="FortiGate NGFW deployment &amp; configuration,IPS/IDS threat inspection signatures,SSL-VPN secure remote access tunnels,Web &amp; application filtering policies,Real-time syslog to Splunk &amp; QRadar,Brute-force &amp; port scan detection"><i class="bi bi-box-arrow-up-right me-1"></i> Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: Embedded Systems Calculator -->
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-embedded">
+              <div class="portfolio-content h-100">
+                <div class="portfolio-img-box">
+                  <img src="assets/img/portfolio/project-embedded-calculator.jpg" alt="Electronic Calculator (Embedded Systems)">
+                </div>
+                <div class="portfolio-body">
+                  <span class="badge-cat" data-i18n="proj2_cat">Embedded / Product</span>
+                  <h4 class="project-card-title" data-i18n="proj2_title">Electronic Calculator (Embedded Systems)</h4>
+                  <p class="project-card-meta" data-i18n="proj2_meta">PIC16F877A | Embedded C | Hardware Architecture</p>
+                  <p class="project-card-desc" data-i18n="proj2_desc">Digital calculator architecture designed and programmed on PIC16F877A microcontroller hardware. Integrated a 4x4 matrix keypad and 16x2 LCD module for interactive I/O, implementing arithmetic core algorithms in Embedded C for reliable calculation and debounced user input.</p>
+                  <div class="project-card-actions">
+                    <a href="assets/img/portfolio/project-embedded-calculator.jpg" title="Electronic Calculator (Embedded Systems)" data-gallery="portfolio-gallery-embedded" class="glightbox btn btn-sm btn-outline-info"><i class="bi bi-zoom-in me-1"></i> Preview</a>
+                    <button onclick="openProjectModal(this)" class="btn btn-sm btn-primary" style="background: var(--accent-color); color: #050b14; border: none; font-weight: 600;" data-project-title="Electronic Calculator (Embedded Systems)" data-project-img="assets/img/portfolio/project-embedded-calculator.jpg" data-project-desc="Digital calculator architecture designed and programmed on PIC16F877A microcontroller hardware. Integrated a 4x4 matrix keypad and 16x2 LCD module for interactive I/O, implementing arithmetic core algorithms in Embedded C for reliable calculation and debounced user input." data-project-features="PIC16F877A microcontroller programming,4x4 matrix keypad integration,16x2 LCD module display,Embedded C arithmetic algorithms,Debounced user input handling,Hardware/software co-design"><i class="bi bi-box-arrow-up-right me-1"></i> Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SERVICES SECTION ====== -->
+    <section id="services" class="services section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="section_services">Services</h2>
+        <p data-i18n="services_desc">End-to-end security operations, threat triage, network infrastructure, and enterprise IT support aligned with industry standards.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card" onclick="openServiceModal(this)" data-svc-icon="bi-shield-check" data-svc-title="SOC Monitoring &amp; Log Analysis" data-svc-desc="Alert triage, log analysis, and anomaly detection using enterprise SIEM platforms (Splunk, IBM QRadar, FortiSIEM, Security Onion) to identify Indicators of Compromise (IOCs)." data-svc-capabilities="Real-time alert monitoring &amp; triage across SIEM dashboards,Log correlation &amp; analysis (Syslog, Windows Event Logs, Firewall Logs),IOC identification (IP, hash, domain) &amp; threat intelligence enrichment,Custom detection rule creation &amp; tuning,Security event classification &amp; prioritization,Dashboard creation &amp; reporting" data-svc-tools="Splunk,IBM QRadar,FortiSIEM,Security Onion">
+              <div class="service-card-header">
+                <div class="service-icon-wrap"><i class="bi bi-shield-check"></i></div>
+                <h4 class="service-card-title" data-i18n="svc1_title">SOC Monitoring &amp; Log Analysis</h4>
+                <i class="bi bi-arrow-right service-arrow-icon"></i>
+              </div>
+              <p class="service-card-desc" data-i18n="svc1_desc">Alert triage, log analysis, and anomaly detection using enterprise SIEM platforms (Splunk, IBM QRadar, FortiSIEM, Security Onion) to identify Indicators of Compromise (IOCs).</p>
+              <div class="service-card-footer">
+                <span class="service-more-link"><i class="bi bi-arrow-up-right-circle me-1"></i> Full Details</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card" onclick="openServiceModal(this)" data-svc-icon="bi-exclamation-octagon" data-svc-title="Incident Response &amp; Reporting" data-svc-desc="Investigating, containing, and escalating security incidents using structured IR workflows, SOAR playbooks (FortiSOAR), and comprehensive forensic documentation." data-svc-capabilities="Incident detection, analysis &amp; containment procedures,SOAR playbook execution &amp; automated response,Forensic evidence collection &amp; chain of custody,Post-incident reporting &amp; lessons learned documentation,Malware analysis &amp; reverse engineering basics,Threat intelligence sharing &amp; collaboration" data-svc-tools="FortiSOAR,FortiAnalyzer,MITRE ATT&amp;CK,TheHive">
+              <div class="service-card-header">
+                <div class="service-icon-wrap"><i class="bi bi-exclamation-octagon"></i></div>
+                <h4 class="service-card-title" data-i18n="svc2_title">Incident Response &amp; Reporting</h4>
+                <i class="bi bi-arrow-right service-arrow-icon"></i>
+              </div>
+              <p class="service-card-desc" data-i18n="svc2_desc">Investigating, containing, and escalating security incidents using structured IR workflows, SOAR playbooks (FortiSOAR), and comprehensive forensic documentation.</p>
+              <div class="service-card-footer">
+                <span class="service-more-link"><i class="bi bi-arrow-up-right-circle me-1"></i> Full Details</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card" onclick="openServiceModal(this)" data-svc-icon="bi-activity" data-svc-title="Network Traffic &amp; Firewall Monitoring" data-svc-desc="Deep packet inspection and traffic analysis with Wireshark, combined with FortiGate firewall, IDS/IPS, VPN, and security policy administration." data-svc-capabilities="PCAP deep packet inspection &amp; protocol analysis,Firewall policy management &amp; traffic filtering,IDS/IPS signature monitoring &amp; tuning,SSL/IPsec VPN configuration &amp; management,Network anomaly detection &amp; baseline monitoring,Security policy auditing &amp; compliance" data-svc-tools="Wireshark,FortiGate,Snort,tcpdump">
+              <div class="service-card-header">
+                <div class="service-icon-wrap"><i class="bi bi-activity"></i></div>
+                <h4 class="service-card-title" data-i18n="svc3_title">Network Traffic &amp; Firewall Monitoring</h4>
+                <i class="bi bi-arrow-right service-arrow-icon"></i>
+              </div>
+              <p class="service-card-desc" data-i18n="svc3_desc">Deep packet inspection and traffic analysis with Wireshark, combined with FortiGate firewall, IDS/IPS, VPN, and security policy administration.</p>
+              <div class="service-card-footer">
+                <span class="service-more-link"><i class="bi bi-arrow-up-right-circle me-1"></i> Full Details</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card" onclick="openServiceModal(this)" data-svc-icon="bi-bug" data-svc-title="Vulnerability Assessment" data-svc-desc="Systematic vulnerability scanning, network/port discovery, and penetration testing fundamentals across network, web application, and wireless attack surfaces." data-svc-capabilities="Network &amp; port scanning for service enumeration,Web application vulnerability testing (OWASP Top 10),Wireless security assessment &amp; auditing,Vulnerability prioritization &amp; remediation reporting,Social engineering awareness testing,Compliance-driven vulnerability management" data-svc-tools="Nmap,Nessus,Burp Suite,Metasploit">
+              <div class="service-card-header">
+                <div class="service-icon-wrap"><i class="bi bi-bug"></i></div>
+                <h4 class="service-card-title" data-i18n="svc4_title">Vulnerability Assessment</h4>
+                <i class="bi bi-arrow-right service-arrow-icon"></i>
+              </div>
+              <p class="service-card-desc" data-i18n="svc4_desc">Systematic vulnerability scanning, network/port discovery, and penetration testing fundamentals across network, web application, and wireless attack surfaces.</p>
+              <div class="service-card-footer">
+                <span class="service-more-link"><i class="bi bi-arrow-up-right-circle me-1"></i> Full Details</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card" onclick="openServiceModal(this)" data-svc-icon="bi-diagram-3" data-svc-title="Network Design &amp; Implementation" data-svc-desc="Enterprise network design, VLAN segmentation, NAT, ACLs, and dynamic routing (OSPF, EIGRP) utilizing Cisco routers and switches for high-performance LAN/WANs." data-svc-capabilities="Hierarchical Core-Distribution-Access architecture design,VLAN segmentation, Inter-VLAN routing &amp; 802.1Q trunking,Dynamic routing protocols (OSPF, EIGRP, BGP basics),NAT/PAT, ACLs, HSRP &amp; redundancy planning,Network documentation &amp; topology mapping,Performance optimization &amp; scalability planning" data-svc-tools="Cisco IOS,Packet Tracer,GNS3,EVE-NG">
+              <div class="service-card-header">
+                <div class="service-icon-wrap"><i class="bi bi-diagram-3"></i></div>
+                <h4 class="service-card-title" data-i18n="svc5_title">Network Design &amp; Implementation</h4>
+                <i class="bi bi-arrow-right service-arrow-icon"></i>
+              </div>
+              <p class="service-card-desc" data-i18n="svc5_desc">Enterprise network design, VLAN segmentation, NAT, ACLs, and dynamic routing (OSPF, EIGRP) utilizing Cisco routers and switches for high-performance LAN/WANs.</p>
+              <div class="service-card-footer">
+                <span class="service-more-link"><i class="bi bi-arrow-up-right-circle me-1"></i> Full Details</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-card" onclick="openServiceModal(this)" data-svc-icon="bi-server" data-svc-title="Windows Server &amp; Active Directory" data-svc-desc="Enterprise user administration, Group Policy Objects (GPOs), permissions management, domain services, and Tier 1/2 technical support for seamless operations." data-svc-capabilities="Active Directory domain setup &amp; user management,Group Policy Objects (GPOs) configuration &amp; deployment,DHCP, DNS, file/print server administration,Tier 1/2 helpdesk &amp; endpoint troubleshooting,Backup &amp; disaster recovery planning,System hardening &amp; patch management" data-svc-tools="Windows Server,Active Directory,PowerShell,VMware">
+              <div class="service-card-header">
+                <div class="service-icon-wrap"><i class="bi bi-server"></i></div>
+                <h4 class="service-card-title" data-i18n="svc6_title">Windows Server &amp; Active Directory</h4>
+                <i class="bi bi-arrow-right service-arrow-icon"></i>
+              </div>
+              <p class="service-card-desc" data-i18n="svc6_desc">Enterprise user administration, Group Policy Objects (GPOs), permissions management, domain services, and Tier 1/2 technical support for seamless operations.</p>
+              <div class="service-card-footer">
+                <span class="service-more-link"><i class="bi bi-arrow-up-right-circle me-1"></i> Full Details</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SERVICE DETAIL MODAL ====== -->
+    <div id="serviceModal" class="service-modal-overlay" onclick="closeServiceModal(event)">
+      <div class="service-modal-content">
+        <button class="service-modal-close" onclick="closeServiceModal(event, true)" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+        <div class="service-modal-header-area">
+          <div class="service-modal-icon" id="serviceModalIcon"></div>
+          <h2 id="serviceModalTitle"></h2>
+        </div>
+        <div class="service-modal-body">
+          <p id="serviceModalDesc" class="service-modal-desc"></p>
+          <div class="service-modal-section">
+            <h4><i class="bi bi-list-check me-2"></i>Key Capabilities</h4>
+            <ul id="serviceModalCapabilities" class="service-modal-list"></ul>
+          </div>
+          <div class="service-modal-section">
+            <h4><i class="bi bi-tools me-2"></i>Tools & Technologies</h4>
+            <div id="serviceModalTools" class="service-modal-tools"></div>
+          </div>
+          <div class="service-modal-cta">
+            <a href="#contact" class="btn-hero btn-download-cv" onclick="closeServiceModal(event, true)"><i class="bi bi-send me-2"></i>Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== CERTIFICATES GALLERY SECTION ====== -->
+    <section id="certificates" class="certificates-section section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="section_certificates">Certificate Gallery</h2>
+        <p data-i18n="certificates_desc">Professional certifications and achievements demonstrating expertise in cybersecurity, networking, and IT infrastructure.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="cert-carousel-wrapper">
+          <button class="cert-nav-btn cert-nav-prev" onclick="scrollCerts(-1)" aria-label="Previous"><i class="bi bi-chevron-left"></i></button>
+          <div class="cert-carousel" id="certCarousel">
+
+            <div class="cert-card">
+              <div class="cert-img-wrap">
+                <img src="assets/img/certificates/cybersecurity.jpg" alt="Cybersecurity Certification" loading="lazy">
+                <div class="cert-overlay">
+                  <a href="assets/img/certificates/cybersecurity.jpg" class="glightbox" data-gallery="cert-gallery"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+              <div class="cert-info">
+                <h5>Cybersecurity Foundation</h5>
+                <span class="cert-issuer"><i class="bi bi-building me-1"></i>Palo Alto Networks</span>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-img-wrap">
+                <img src="assets/img/certificates/cert-networking.jpg" alt="Network Engineering Certification" loading="lazy">
+                <div class="cert-overlay">
+                  <a href="assets/img/certificates/cert-networking.jpg" class="glightbox" data-gallery="cert-gallery"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+              <div class="cert-info">
+                <h5>Network Infrastructure</h5>
+                <span class="cert-issuer"><i class="bi bi-building me-1"></i>NTI </span>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-img-wrap">
+                <img src="assets/img/certificates/cert-it-support.jpg" alt="IT Support Certification" loading="lazy">
+                <div class="cert-overlay">
+                  <a href="assets/img/certificates/cert-it-support.jpg" class="glightbox" data-gallery="cert-gallery"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+              <div class="cert-info">
+                <h5>IT Technical Support</h5>
+                <span class="cert-issuer"><i class="bi bi-building me-1"></i>NTI</span>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-img-wrap">
+                <img src="assets/img/certificates/Network-Securty.jpg" alt="SIEM Certification" loading="lazy">
+                <div class="cert-overlay">
+                  <a href="assets/img/certificates/Network-Securty.jpg" class="glightbox" data-gallery="cert-gallery"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+              <div class="cert-info">
+                <h5>Network Security </h5>
+                <span class="cert-issuer"><i class="bi bi-building me-1"></i>Palo Alto Networks</span>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-img-wrap">
+                <img src="assets/img/certificates/cert-python.jpg" alt="Python Certification" loading="lazy">
+                <div class="cert-overlay">
+                  <a href="assets/img/certificates/cert-python.jpg" class="glightbox" data-gallery="cert-gallery"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+              <div class="cert-info">
+                <h5>Python Automation</h5>
+                <span class="cert-issuer"><i class="bi bi-building me-1"></i>Python Academy</span>
+              </div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-img-wrap">
+                <img src="assets/img/certificates/Innovera.jpg" alt="Firewall Certification" loading="lazy">
+                <div class="cert-overlay">
+                  <a href="assets/img/certificates/Innovera.jpg" class="glightbox" data-gallery="cert-gallery"><i class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+              <div class="cert-info">
+                <h5>Cybersecurity Foundation</h5>
+                <span class="cert-issuer"><i class="bi bi-building me-1"></i>Innovera Academy</span>
+              </div>
+            </div>
+
+          </div>
+          <button class="cert-nav-btn cert-nav-next" onclick="scrollCerts(1)" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PROJECT DETAIL MODAL ====== -->
+    <div id="projectModal" class="project-modal-overlay" onclick="closeProjectModal(event)">
+      <div class="project-modal-content">
+        <button class="project-modal-close" onclick="closeProjectModal(event, true)" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+        <div class="project-modal-img-wrap">
+          <img id="projectModalImg" src="" alt="">
+        </div>
+        <div class="project-modal-body">
+          <h3 id="projectModalTitle"></h3>
+          <p id="projectModalDesc"></p>
+          <h5><i class="bi bi-star-fill me-2" style="color: var(--accent-color);"></i>Key Features</h5>
+          <ul id="projectModalFeatures"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== CONTACT SECTION ====== -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="section_contact">Contact</h2>
+        <p data-i18n="contact_desc">Feel free to reach out for security monitoring, network engineering, IT support inquiries, or freelance opportunities.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3 data-i18n="contact_address">Address</h3>
+                  <p data-i18n="contact_address_val">Minya, Egypt</p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3 data-i18n="contact_call">Phone</h3>
+                  <p>+20 01068487084</p>
+                </div>
+              </div>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="350">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3 data-i18n="about_email">Email</h3>
+                  <p>mah902110@gmail.com</p>
+                </div>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113220.35411739797!2d30.686520770513977!3d28.10986518116518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b252060010077%3A0x868c2d76ee179f82!2sMinya%2C%20El%20Minya%201%2C%20Minya%20Governorate!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" frameborder="0" style="border:0; width: 100%; height: 250px; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form id="contactForm" class="php-email-form" action="#" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2" data-i18n="contact_name">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2" data-i18n="contact_email">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2" data-i18n="contact_subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2" data-i18n="contact_message">Message</label>
+                  <textarea class="form-control" name="message" rows="8" id="message-field" required=""></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message" data-i18n="contact_sent">Your message has been sent. Thank you!</div>
+                  <button type="submit" data-i18n="contact_send">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <div class="footer-social-links text-center mb-3">
+        <a href="https://www.linkedin.com/in/mohamed-mahmoud-248b35285/" target="_blank" rel="noopener" class="footer-social-btn linkedin" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://wa.me/201068487084" target="_blank" rel="noopener" class="footer-social-btn whatsapp" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.credly.com/users/mohamed-mahmoud-ibrahim" target="_blank" rel="noopener" class="footer-social-btn credly" title="Credly"><i class="bi bi-award"></i></a>
+        <a href="mailto:mah902110@gmail.com" class="footer-social-btn email" title="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="copyright text-center">
+        <p>© <span data-i18n="footer_copyright">Copyright</span> <strong class="px-1 sitename">Mohamed Mahmoud Ibrahim</strong> <span data-i18n="footer_rights">All Rights Reserved</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Site JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/network-bg.js"></script>
+
+</body>
+
+</html>
